@@ -3,9 +3,9 @@
 
 <div align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/jamubc/gemini-mcp-tool?logo=github&label=GitHub)](https://github.com/jamubc/gemini-mcp-tool/releases)
-[![npm version](https://img.shields.io/npm/v/gemini-mcp-tool)](https://www.npmjs.com/package/gemini-mcp-tool)
-[![npm downloads](https://img.shields.io/npm/dt/gemini-mcp-tool)](https://www.npmjs.com/package/gemini-mcp-tool)
+[![GitHub Release](https://img.shields.io/github/v/release/Gy920/qwen-mcp-tool?logo=github&label=GitHub)](https://github.com/Gy920/qwen-mcp-tool/releases)
+[![npm version](https://img.shields.io/npm/v/@gy920/qwen-mcp-tool)](https://www.npmjs.com/package/@gy920/qwen-mcp-tool)
+[![npm downloads](https://img.shields.io/npm/dt/@gy920/qwen-mcp-tool)](https://www.npmjs.com/package/@gy920/qwen-mcp-tool)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red.svg)](https://github.com/jamubc/gemini-mcp-tool)
 
@@ -17,9 +17,10 @@ This is a simple Model Context Protocol (MCP) server that allows AI assistants t
 
 - Ask Qwen Code natural questions, through Claude or brainstorm new ideas in a party of 3!
 
-<a href="https://glama.ai/mcp/servers/@jamubc/gemini-mcp-tool">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@jamubc/gemini-mcp-tool/badge" alt="Gemini Tool MCP server" />
-</a>
+<!-- Glama.ai badge will be available once the package is indexed -->
+<!-- <a href="https://glama.ai/mcp/servers/@gy920/qwen-mcp-tool">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@gy920/qwen-mcp-tool/badge" alt="Qwen MCP Tool" />
+</a> -->
 
 ## TLDR: [![Claude](https://img.shields.io/badge/Claude-D97757?logo=claude&logoColor=fff)](#) + [![Qwen](https://img.shields.io/badge/Qwen-FF6B6B?logo=qwen&logoColor=fff)](#)
 
@@ -158,6 +159,16 @@ You can use these commands directly in Claude Code's interface (compatibility wi
 - **/help**: Displays the Qwen CLI help information.
 - **/ping**: Tests the connection to the server.
   - **`message`** (optional): A message to echo back.
+
+## Acknowledgments
+
+This project is based on the excellent work of [jamubc/gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool). Special thanks to the original author for creating the foundation that made this Qwen Code adaptation possible.
+
+**Key changes in this fork:**
+- 🔄 Converted from Gemini CLI to Qwen Code CLI
+- 🛠️ Updated all tool definitions and model references
+- 📝 Adapted documentation for Qwen Code usage
+- 🏷️ Renamed package to `@gy920/qwen-mcp-tool`
 
 ## Contributing
 
