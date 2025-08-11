@@ -37,7 +37,7 @@ Before using this tool, ensure you have:
 ### One-Line Setup
 
 ```bash
-claude mcp add qwen-cli -- npx -y qwen-mcp-tool
+claude mcp add qwen-cli -- npx -y @gy920/qwen-mcp-tool
 ```
 
 ### Verify Installation
@@ -54,7 +54,7 @@ If you already have it configured in Claude Desktop:
 ```json
 "qwen-cli": {
   "command": "npx",
-  "args": ["-y", "qwen-mcp-tool"]
+  "args": ["-y", "@gy920/qwen-mcp-tool"]
 }
 ```
 
@@ -76,7 +76,7 @@ Add this configuration to your Claude Desktop config file:
   "mcpServers": {
     "qwen-cli": {
       "command": "npx",
-      "args": ["-y", "qwen-mcp-tool"]
+      "args": ["-y", "@gy920/qwen-mcp-tool"]
     }
   }
 }
