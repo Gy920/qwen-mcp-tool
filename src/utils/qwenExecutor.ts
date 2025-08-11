@@ -12,7 +12,7 @@ import { formatChangeModeResponse, summarizeChangeModeEdits } from './changeMode
 import { chunkChangeModeEdits } from './changeModeChunker.js';
 import { cacheChunks, getChunks } from './chunkCache.js';
 
-export async function executeGeminiCLI(
+export async function executeQwenCLI(
   prompt: string,
   model?: string,
   sandbox?: boolean,
@@ -99,7 +99,7 @@ ${prompt_processed}
   args.push(CLI.FLAGS.PROMPT, finalPrompt);
   
   try {
-    return await executeCommand(CLI.COMMANDS.GEMINI, args, onProgress);
+    return await executeCommand(CLI.COMMANDS.QWEN, args, onProgress);
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     if (errorMessage.includes(ERROR_MESSAGES.QUOTA_EXCEEDED) && model !== MODELS.FLASH) {
@@ -118,7 +118,7 @@ ${prompt_processed}
         
       fallbackArgs.push(CLI.FLAGS.PROMPT, fallbackPrompt);
       try {
-        const result = await executeCommand(CLI.COMMANDS.GEMINI, fallbackArgs, onProgress);
+        const result = await executeCommand(CLI.COMMANDS.QWEN, fallbackArgs, onProgress);
         Logger.warn(`Successfully executed with ${MODELS.FLASH} fallback.`);
         await sendStatusMessage(STATUS_MESSAGES.FLASH_SUCCESS);
         return result;
@@ -164,7 +164,7 @@ export async function processChangeModeOutput(
   const edits = parseChangeModeOutput(rawResult);
   
   if (edits.length === 0) {
-    return `No edits found in Gemini's response. Please ensure Gemini uses the OLD/NEW format. \n\n+ ${rawResult}`;
+    return `No edits found in Qwen's response. Please ensure Qwen uses the OLD/NEW format. \n\n+ ${rawResult}`;
   }
 
   // Validate edits
