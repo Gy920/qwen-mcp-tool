@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamubc/qwen-mcp-tool.git"
+    "url": "git+https://github.com/Gy920/qwen-mcp-tool.git"
   },
   "bugs": {
-    "url": "https://github.com/jamubc/qwen-mcp-tool/issues"
+    "url": "https://github.com/Gy920/qwen-mcp-tool/issues"
   },
-  "homepage": "https://github.com/jamubc/qwen-mcp-tool#readme",
+  "homepage": "https://github.com/Gy920/qwen-mcp-tool#readme",
   "engines": {
     "node": ">=16.0.0"
   },
