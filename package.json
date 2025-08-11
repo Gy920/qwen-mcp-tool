@@ -1,5 +1,5 @@
 {
-  "name": "qwen-mcp-tool",
+  "name": "@gy920/qwen-mcp-tool",
   "version": "1.1.4",
   "description": "MCP server for Qwen Code CLI integration",
   "type": "module",
